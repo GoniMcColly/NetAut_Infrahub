@@ -9,8 +9,8 @@ queries:
 #  - name: GetNetworkDevices
 #    file_path: "infrahub/queries/GetNetworkDevices.gql"
 
-schemas:
-  - "schemas/vrf.yml"
+#schemas:
+#  - "schemas/vrf.yml"
 
 #python_transforms:
 #  - name: TransformTopologyMarkdown
