@@ -1,0 +1,52 @@
+query GetVrfConfig($name: String!) {
+  NetworkDevice(name__value: $name) {
+    edges {
+      node {
+        name {
+          value
+        }
+        interfaces {
+          edges {
+            node {
+              name {
+                value
+              }
+              ip_address {
+                node {
+                  address {
+                    value
+                  }
+                }
+              }
+              vrf {
+                edges {
+                  node {
+                    name {
+                      value
+                    }
+                    vni {
+                      value
+                    }
+                    evi {
+                      value
+                    }
+                    route_target {
+                      value
+                    }
+                    ecmp {
+                      value
+                    }
+                    vxlan_tunnel_name {
+                      value
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
