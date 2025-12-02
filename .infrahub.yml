@@ -12,20 +12,7 @@ queries:
 #schemas:
 #  - "schemas/vrf.yml"
 
-#python_transforms:
-#  - name: TransformTopologyMarkdown
-#    class_name: TransformTopologyMarkdown
-#    file_path: "infrahub/transforms/global_topology.py"
-#  - name: TransformTopologySVGGraphviz
-#    class_name: TransformTopologySVGGraphviz
-#    file_path: "infrahub/transforms/global_topology.py"
-#  - name: TransformTopologySVGD2
-#    class_name: TransformTopologySVGD2
-#    file_path: "infrahub/transforms/global_topology.py"
-#  - name: TransformContainerlabTopology
-#    class_name: TransformContainerlabTopology
-#    file_path: "infrahub/transforms/containerlab.py"
-#    convert_query_response: True
+python_transforms:
   - name: TransformSRLpygnmi
     class_name: TransformSRLpygnmi
     file_path: "transforms/srl_pygnmi.py"
